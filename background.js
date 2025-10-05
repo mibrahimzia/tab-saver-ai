@@ -1,5 +1,5 @@
 // ============ CONFIG - replace API key below ============ //
-const OPENROUTER_API_KEY = "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"; // <-- put your OpenRouter / Groq key here
+const OPENROUTER_API_KEY = "YOUR_OPENROUTER_KEY_HERE"; // <-- put your OpenRouter / Groq key here
 const OPENROUTER_ENDPOINT = "https://openrouter.ai/api/v1/chat/completions";
 // If you want to use Groq instead, swap endpoint + payload accordingly.
 // ======================================================= //
@@ -164,3 +164,4 @@ ${tabList}`;
   sendResponse({ error: "Unknown action: " + message.action });
   return false;
 });
+
