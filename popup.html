@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Tab Saver AI</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        width: 340px;
+        padding: 12px;
+        box-sizing: border-box;
+      }
+      button {
+        display: block;
+        width: 100%;
+        margin-bottom: 8px;
+        padding: 8px 10px;
+        cursor: pointer;
+        border: none;
+        border-radius: 6px;
+        background: linear-gradient(180deg, #2b8de6, #1961c2);
+        color: white;
+        font-weight: 600;
+      }
+      button.secondary {
+        background: #444;
+      }
+      #result {
+        margin-top: 10px;
+        padding: 10px;
+        background: #fafafa;
+        border-radius: 6px;
+        min-height: 80px;
+        max-height: 320px;
+        overflow-y: auto;
+        font-size: 13px;
+        line-height: 1.35;
+        white-space: pre-wrap;
+      }
+      h3 { margin: 0 0 8px 0; font-size: 16px; }
+    </style>
+  </head>
+  <body>
+    <h3>Tab Saver AI</h3>
+
+    <button id="saveTabs">💾 Save Tabs (TXT)</button>
+    <button id="categorizeTabs">🗂️ AI Categorize (MD)</button>
+    <button id="summarizeTabs">📝 Summarize Session (MD)</button>
+
+    <button id="downloadAIResult" class="secondary" style="display:none;">⬇️ Download Categorization (MD)</button>
+    <button id="downloadLLM" class="secondary" style="display:none;">⬇️ Download Summary (MD)</button>
+
+    <div id="result">Results will appear here...</div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

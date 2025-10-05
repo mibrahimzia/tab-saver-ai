@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Saver AI",
+  "description": "Save open tabs and use LLM (OpenRouter/Groq) to categorize or summarize them. Persist results as Markdown.",
+  "version": "1.0",
+  "permissions": [
+    "tabs",
+    "storage",
+    "downloads",
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "icons/icon128.png"
+    }
+  }
+}
